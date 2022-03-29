@@ -57,7 +57,7 @@ def take_action():
 
     state_description = ''
 
-    d = 0.4
+    d = 0.3
 
     if regions['front'] > d and regions['fright'] > (d+0.6) and regions['bright'] > d:
         state_description = 'case 1 - nothing'
@@ -90,7 +90,7 @@ def take_action():
 
 def find_wall():
     msg = Twist()
-    msg.linear.x = 0.2
+    msg.linear.x = 0.3
     msg.angular.z = 0.01
     return msg
 
